@@ -1,0 +1,307 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 249, 249);
+    margin: 0;
+}
+
+
+
+header {
+    background-color: #e11a1a;
+    color: white;
+    text-align: left;
+    padding: 3px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+header p {
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+nav ul {
+    background-color: #ff6060;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 15px 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #7c7c7c;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.main {
+    width: 65%;
+    margin-bottom: 20px;
+    
+}
+
+.main article {
+    
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 2%;
+    border-color: black;
+    padding: 5px;
+    background-color: rgb(255, 245, 245);
+    
+}
+
+.main a {
+    text-decoration: none;
+     color: rgb(0, 0, 0);
+}
+
+.main img {
+    width: 50%;
+    height: auto;
+    display: flex;
+    
+  
+}
+
+.main h2 {
+    margin: 10px 0;
+    color: #000000;
+    font-size: 34px;
+   
+      display: flex;
+   flex-wrap: wrap;
+}
+
+
+.main .text   {
+    font-size: 23px;
+    color: #000000;
+    transition: color 0.3s ease;
+    
+}
+
+.text:hover {
+    color: #d6d4d1;
+}
+
+.main p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+
+aside {
+    width: 30%;
+}
+
+.popular, .contact {
+        margin-top: -20px;
+        margin-bottom: 40px;
+}
+
+.popular h3, .contact h3 {
+    background-color: #ff3f3f;
+    color: white;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.popular ul {
+    list-style: none;
+    padding: 2px;
+    
+    background-color: #ffcaca;
+    margin-top: 0px;
+}
+
+.popular ul li {
+    margin-bottom: 5px;
+}
+
+.popular ul li a {
+    text-decoration: none;
+    color: #010101;
+    transition: color 0.3s ease;
+    margin-left: 5px;
+}
+
+.popular ul li a:hover {
+    color: #555;
+}
+
+.contact p {
+    background-color: #ffcaca;
+    padding: 10px;
+    margin-top:0px;
+    border: 1px solid #ccc;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ccc;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+
+    .main img{
+        width: 40%;
+    }
+
+    .main .text{
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-wrap: nowrap; 
+    }
+
+    nav ul li {
+        margin: 0 8px; 
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main, aside {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 12px; 
+    }
+
+    .main .text{
+        font-size: 15px;
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .main p{
+        font-size: 12px;
+    }
+    .popular h3, .contact h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul li a {
+        font-size: 13px; 
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .popular h3, .contact h3 {
+        font-size: 13px;
+    }
+
+    .popular li {
+        font-size: 11px;
+    }
+
+    .contact p {
+        font-size: 11px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 10px; 
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .popular h3, .contact h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 8px; 
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .popular h3, .contact h3 {
+        font-size: 16px;
+    }
+}
